@@ -7,7 +7,7 @@ docker-minecraft and Minecraft itself.
 
     git clone https://github.com/TylerBurr/docker_gameserver.git
     cd docker_gameserver-master\minecraft_java\attack_of_the_b_team
-    sudo docker build -t attackofbteam .
+    sudo docker build -t attackofthebteam .
 
 
 ## Running docker-minecraft
@@ -22,12 +22,12 @@ Also be sure your mounted directory on your host machine is
 already created before running `mkdir -p /mnt/minecraft`.
 
     sudo docker run -it -d=true -p=25565:25565 -v=/mnt/minecraft:/data awakmee/ /start
-    sudo docker run -d=true -p=25565:25565 -v=/mnt/minecraft:/data attackofbteam /start
+    sudo docker run -d=true -p=25565:25565 -v=/mnt/minecraft:/data attackofthebteam /start
 
 From now on when you start/stop docker-minecraft you should use the container id
 with the following commands. To get your container id, after you initial run
 type `sudo docker ps` and it will show up on the left side followed by the
-image name which is `attackofbteam:latest`.
+image name which is `attackofthebteam:latest`.
 
     sudo docker start <container_id>
     sudo docker stop <container_id>
