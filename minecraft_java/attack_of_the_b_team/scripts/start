@@ -1,0 +1,1 @@
+cd /data/; java -Xmx3G -Xms2G -jar BTeam.jar nogui
