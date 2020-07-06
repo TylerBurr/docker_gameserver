@@ -5,7 +5,7 @@
 #
 
 FROM ubuntu:18.04
-LABEL maintainer="LinuxGSM <me@danielgibbs.co.uk>"
+LABEL maintainer="LinuxGSM"
 
 ENV DEBIAN_FRONTEND noninteractive
 
