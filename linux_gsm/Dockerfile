@@ -66,7 +66,7 @@ RUN dpkg --add-architecture i386 && \
 		libtcmalloc-minimal4:i386 \
 		libsdl1.2debian \
 		libnm-glib-dev:i386 \
-    steamcmd\
+                steamcmd\
 		&& apt-get clean \
 	  && rm -rf /var/lib/apt/lists/*
 
